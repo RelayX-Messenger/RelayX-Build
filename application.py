@@ -25,7 +25,7 @@ async def lifespan(app:FastAPI):
     try:
         yield
     finally:
-        print("[RelayX Core] Shutting down.")
+        print(f"{green}INFO{reset}:     [{cyan}RelayX Core{reset}] Shutting down.")
         for task in tasks:
             task.cancel()
         await asyncio.gather(*tasks, return_exceptions=True)

@@ -3,7 +3,7 @@ from plyer import notification
 
 
 from RelayX.core.tor_bootstrap import stop_tor
-from RelayX.utils.config import db_filepath as db_file
+from RelayX.utils.paths import db_filepath as db_file
 from utilities.network.network_service import HSDIR
 
 

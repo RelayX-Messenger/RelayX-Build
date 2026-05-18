@@ -1,12 +1,5 @@
 import subprocess, os, time, sys, pathlib
-
-APPDATA = os.getenv("APPDATA")
-RelayX_exe_location = pathlib.Path(sys.executable).parent
-
-HSDIR = os.path.join(APPDATA, "RelayX", "data", "HiddenService")
-hostname_path = os.path.join(HSDIR, "hostname")
-tor_necessities = os.path.join(HSDIR, "tor_necessities")
-tor_path = os.path.join(RelayX_exe_location, '..', "tor", "tor.exe" )
+from RelayX.utils.paths import HSDIR, tor_necessities, tor_path, hostname_path
 
 os.makedirs(HSDIR, exist_ok=True)
 os.makedirs(tor_necessities, exist_ok=True)

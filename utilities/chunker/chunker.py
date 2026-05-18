@@ -4,7 +4,7 @@ This is the raw chunker module that chunks and returns the chunk index and file 
 """
 import ctypes, os
 from ctypes import c_int, c_size_t, c_char_p, POINTER, Structure
-from RelayX.utils.config import libs_dir
+from RelayX.utils.paths import libs_dir
 
 class Chunk(Structure):
     _fields_ = [("index", c_int),

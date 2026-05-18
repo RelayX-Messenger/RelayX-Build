@@ -1,6 +1,6 @@
 import subprocess
 from utilities.network.network_service import HSDIR
-from RelayX.utils.config import torrc_path, tor_path
+from RelayX.utils.paths import torrc_path, tor_path
 green = "\033[0;32m"
 cyan = "\033[0;36m"
 reset = "\033[0m"

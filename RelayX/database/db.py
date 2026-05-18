@@ -2,10 +2,9 @@ import os
 
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
 from sqlalchemy.orm import declarative_base
+from RelayX.utils.paths import db_filepath
 
-db_path = os.path.join(os.getenv("LOCALAPPDATA"), "RelayX")
-os.makedirs(db_path, exist_ok=True)
-db_filepath = os.path.join(db_path, "RelayX.db")
+os.makedirs(os.path.dirname(db_filepath), exist_ok=True)
 
 DATABASE_URL = f"sqlite+aiosqlite:///{db_filepath}"
 

@@ -1,4 +1,3 @@
 .vscode/
 __pycache__/
-main.build/
-main.dist/
+venv/

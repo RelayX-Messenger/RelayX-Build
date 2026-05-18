@@ -11,7 +11,8 @@ import time, struct, msgpack, asyncio
 
 from utilities.encryptdecrypt.encrypt_message import encrypt_message
 from utilities.encryptdecrypt.decrypt_message import decrypt_message
-from RelayX.utils.config import user_onion, relay_file, session_key
+from RelayX.utils.config import user_onion, session_key
+from RelayX.utils.paths import relay_file
 from utilities.encryptdecrypt.shield_crypto import derive_AEAD_envelope
 
 # ========================= Helpers ====================================================================================
